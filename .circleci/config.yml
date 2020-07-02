@@ -13,7 +13,6 @@ jobs:
       - python/save-cache
       - run:
           command:
-            cd pollsapi
             python manage.py test
           name: Test
 
