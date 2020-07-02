@@ -18,7 +18,7 @@ urlpatterns = [
     # path("login/", views.obtain_auth_token, name="login"),
     path("login/", LoginView.as_view(), name="login"),
     # path(r'swagger-docs/', schema_view),
-    path(r'swagger-docs/', get_swagger_view(title='Polls API')),
+    # path(r'swagger-docs/', get_swagger_view(title='Polls API')),
     path(r'docs/', include_docs_urls(title='Polls API')),
 ]
 
