@@ -12,11 +12,13 @@ jobs:
       - python/install-deps
       - python/save-cache
       - run:
-          command: ./manage.py test
+          command:
+            . venv/bin/activate
+            cd pollsapi
+            python manage.py test
           name: Test
 
 workflows:
   main:
     jobs:
       - build-and-test
-    
